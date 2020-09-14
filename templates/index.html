@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .loginbox {
+        display: inline-block;
+        margin: 50px;
+        position: relative;
+        padding: 320px;
+      }
+      input {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loginbox">
+      <form action="{{ url_for('signin') }}" method="POST">
+        <input
+          type="text"
+          name="mailid"
+          placeholder="enter your mail id"
+        /><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="enter your password"
+        /><br />
+        <button>submit</button>
+      </form>
+    </div>
+  </body>
+</html>

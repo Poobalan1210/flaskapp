@@ -1,0 +1,9 @@
+.loginbox {
+  display: inline-block;
+  margin: 50px;
+  position: relative;
+  padding: 320px;
+}
+input {
+  margin-bottom: 20px;
+}
